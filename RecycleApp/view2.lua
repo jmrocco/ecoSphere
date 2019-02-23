@@ -50,6 +50,8 @@ greybin.y = display.contentCenterY + 205
 
 local function myTouchListener()
         bluebinCount = bluebinCount + 1
+		points = bluebinCount
+        
         bluetext.text = bluebinCount
 end
   trans1:addEventListener( "tap", myTouchListener)
