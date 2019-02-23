@@ -26,6 +26,15 @@ function scene:create( event )
 		background.y = display.contentCenterY- 25
 		fish = display.newImageRect( "fish.png", 60, 30 )
 		fish2 = display.newImageRect( "dead fish.png", 60, 30 )
+		local can2 =  display.newImageRect( "can.png", 20, 40 )
+		can2.x = display.contentCenterX + 100
+		can2.y = display.contentCenterY - 10
+		local bottle2 =  display.newImageRect( "bottle.png", 20, 40 )
+		bottle2.x = display.contentCenterX + 50
+		bottle2.y = display.contentCenterY + 5
+		local can3 =  display.newImageRect( "can.png", 20, 40 )
+		can3.x = display.contentCenterX - 100
+		can3.y = display.contentCenterY + 30
 
 	else
 		background = display.newImageRect( "worsteco.jpg", 415, 646 )
@@ -33,6 +42,21 @@ function scene:create( event )
 		background.y = display.contentCenterY - 25
 		fish = display.newImageRect( "dead fish.png", 60, 30 )
 		fish2 = display.newImageRect( "dead fish.png", 60, 30 )
+		local can =  display.newImageRect( "can.png", 20, 40 )
+		can.x = display.contentCenterX
+		can.y = display.contentCenterY
+		local bottle =  display.newImageRect( "bottle.png", 20, 40 )
+		bottle.x = display.contentCenterX - 50
+		bottle.y = display.contentCenterY - 20
+		local can2 =  display.newImageRect( "can.png", 20, 40 )
+		can2.x = display.contentCenterX + 100
+		can2.y = display.contentCenterY - 10
+		local bottle2 =  display.newImageRect( "bottle.png", 20, 40 )
+		bottle2.x = display.contentCenterX + 50
+		bottle2.y = display.contentCenterY + 5
+		local can3 =  display.newImageRect( "can.png", 20, 40 )
+		can3.x = display.contentCenterX - 100
+		can3.y = display.contentCenterY + 30
 
  	end
  	fish2.x = 100
