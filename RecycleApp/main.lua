@@ -4,7 +4,7 @@
 --
 -----------------------------------------------------------------------------------------
 
-_G.points = 20
+_G.points = 0
 
 -- show default status bar (iOS)
 display.setStatusBar( display.DefaultStatusBar )
@@ -33,8 +33,8 @@ local tabButtons = {
 }
 
 -- create the actual tabBar widget
-local tabBar = widget.newTabBar{
-	top = display.contentHeight + 55,	-- 50 is default height for tabBar widget
+  local tabBar = widget.newTabBar{
+	top = display.contentHeight,	-- 50 is default height for tabBar widget
 	buttons = tabButtons
 }
 
