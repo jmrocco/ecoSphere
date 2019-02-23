@@ -4,8 +4,6 @@
 --
 -----------------------------------------------------------------------------------------
 
-points = 0
-
 local composer = require( "composer" )
 local scene = composer.newScene()
 
