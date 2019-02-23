@@ -4,7 +4,7 @@
 --
 -----------------------------------------------------------------------------------------
 
-_G.points = 20
+_G.points = 0
 
 -- show default status bar (iOS)
 display.setStatusBar( display.DefaultStatusBar )

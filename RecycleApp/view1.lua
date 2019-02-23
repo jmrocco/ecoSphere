@@ -10,22 +10,32 @@ local scene = composer.newScene()
 function scene:create( event )
 	local sceneGroup = self.view
 	local background
+	local fish
 	if points >= 20 then
 		background = display.newImageRect( "perfecteco.jpg", 360, 560 )
 		background.x = display.contentCenterX
 		background.y = display.contentCenterY-40
+		fish = display.newImageRect( "fish.png", 60, 30 )
+
 	elseif points >= 10 then
 		background = display.newImageRect( "middleeco.jpg", 360, 560 )
 		background.x = display.contentCenterX
 		background.y = display.contentCenterY-40
+		fish = display.newImageRect( "fish.png", 60, 30 )
+
 	else
 		background = display.newImageRect( "worsteco.jpg", 360, 560 )
 		background.x = display.contentCenterX
 		background.y = display.contentCenterY-40
+		fish = display.newImageRect( "dead fish.png", 60, 30 )
+
  	end 
 
-	local fish = display.newImageRect( "fish.jpg", 360, 560 )
-
+	local function swim()
+	    fish.x = fish.x + 1
+	end
+ 
+	timer.performWithDelay(10, swim, 200 )
 
 	sceneGroup:insert( background )
 	sceneGroup:insert( fish )
