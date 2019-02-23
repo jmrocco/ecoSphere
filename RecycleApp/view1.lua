@@ -14,7 +14,10 @@ function scene:create( event )
 	if points >= 20 then
 		background = display.newImageRect( "perfecteco.jpg", 415, 646 )
 		background.x = display.contentCenterX - 20
+<<<<<<< HEAD
 <<<<<<< caleb
+=======
+>>>>>>> b5f163c64f0193330dd9f23cb0b7cad772868543
 		background.y = display.contentCenterY- 25
 		fish = display.newImageRect( "fish.png", 60, 30 )
 
@@ -35,7 +38,10 @@ function scene:create( event )
 		background = display.newImageRect( "worsteco.jpg", 415, 646 )
 		background.x = display.contentCenterX - 20
 		background.y = display.contentCenterY - 25
+<<<<<<< HEAD
 <<<<<<< caleb
+=======
+>>>>>>> b5f163c64f0193330dd9f23cb0b7cad772868543
 		fish = display.newImageRect( "dead fish.png", 60, 30 )
 =======
  	end
