@@ -12,21 +12,21 @@ function scene:create( event )
 	local background
 	local fish
 	if points >= 20 then
-		background = display.newImageRect( "perfecteco.jpg", 360, 560 )
-		background.x = display.contentCenterX
-		background.y = display.contentCenterY-40
+		background = display.newImageRect( "perfecteco.jpg", 415, 646 )
+		background.x = display.contentCenterX - 20
+		background.y = display.contentCenterY- 25
 		fish = display.newImageRect( "fish.png", 60, 30 )
 
 	elseif points >= 10 then
-		background = display.newImageRect( "middleeco.jpg", 360, 560 )
-		background.x = display.contentCenterX
-		background.y = display.contentCenterY-40
+		background = display.newImageRect( "middleeco.jpg", 415, 646 )
+		background.x = display.contentCenterX - 20
+		background.y = display.contentCenterY- 25
 		fish = display.newImageRect( "fish.png", 60, 30 )
 
 	else
-		background = display.newImageRect( "worsteco.jpg", 360, 560 )
-		background.x = display.contentCenterX
-		background.y = display.contentCenterY-40
+		background = display.newImageRect( "worsteco.jpg", 415, 646 )
+		background.x = display.contentCenterX - 20
+		background.y = display.contentCenterY - 25
 		fish = display.newImageRect( "dead fish.png", 60, 30 )
 
  	end 
