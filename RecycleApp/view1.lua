@@ -30,12 +30,30 @@ function scene:create( event )
 		fish = display.newImageRect( "dead fish.png", 60, 30 )
 
  	end
-
+ 	fish.y = 400
+ 	local count = 20000
+ 	local back = false
 	local function swim()
-	    fish.x = fish.x + 1
+		count = count + 100
+		if fish.x < 0 then
+	    	back = false
+		end
+		if fish.x > display.actualContentWidth then
+	    	back = true
+		end
+		if back == false then
+	    	fish.x = fish.x + 1
+		end
+		if back == true then
+	    	fish.x = fish.x - 1
+		end
+		fish.y = (math.sin(fish.x/30) * 20) + 180
+		if points > 30 then
+			fish.y = fish.y + (points * 10)
+		end
 	end
 
-	timer.performWithDelay(10, swim, 200 )
+	timer.performWithDelay(10, swim, count)
 
 	sceneGroup:insert( background )
 	sceneGroup:insert( fish )
