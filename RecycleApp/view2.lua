@@ -10,29 +10,30 @@ local scene = composer.newScene()
 function scene:create( event )
 	local sceneGroup = self.view
 	local background
+  local bluebin
+  local greybin
+
 background = display.newImageRect( "recyclescreen.jpg", 720, 1120 )
 background.x = display.contentCenterX
 background.y = display.contentCenterY - 80
 
-	-- create some text
-	local title = display.newText( "Second View", display.contentCenterX, 125, native.systemFont, 32 )
-	title:setFillColor( 0 )	-- black
+bluebin = display.newImageRect( "blue pin.png", 200, 200)
+bluebin.x = display.contentCenterX - 60
+bluebin.y = display.contentCenterY + 190
 
-	local newTextParams = { text = "Loaded by the second tab's\n\"onPress\" listener\nspecified in the 'tabButtons' table",
-							x = display.contentCenterX + 10,
-							y = title.y + 215,
-							width = 310,
-							height = 310,
-							font = native.systemFont,
-							fontSize = 14,
-							align = "center" }
-	local summary = display.newText( newTextParams )
-	summary:setFillColor( 0 ) -- black
+greybin = display.newImageRect( "grey bin.png", 200,200)
+greybin.x = display.contentCenterX + 60
+greybin.y = display.contentCenterY + 205
+
+	-- create some text
+	local title = display.newText( "Track your recycling!", display.contentCenterX, 125, native.systemFont, 32 )
+	title:setFillColor( 0 )	-- black
 
 	-- all objects must be added to group (e.g. self.view)
 	sceneGroup:insert( background )
 	sceneGroup:insert( title )
-	sceneGroup:insert( summary )
+  sceneGroup:insert(bluebin)
+  sceneGroup:insert(greybin)
 end
 
 function scene:show( event )

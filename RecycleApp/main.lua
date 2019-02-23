@@ -28,8 +28,8 @@ end
 
 -- table to setup buttons
 local tabButtons = {
-	{ label="Ecosystem", defaultFile="button1.png", overFile="button1-down.png", width = 32, height = 32, onPress=onFirstView, selected=true },
-	{ label="Action", defaultFile="button2.png", overFile="button2-down.png", width = 32, height = 32, onPress=onSecondView },
+	{ label="Ecosystem", defaultFile="button1-down.png", overFile="button1.png", width = 32, height = 32, onPress=onFirstView, selected=true },
+	{ label="Recycle", defaultFile="button2.png", overFile="button2-down.png", width = 32, height = 32, onPress=onSecondView },
 }
 
 -- create the actual tabBar widget
