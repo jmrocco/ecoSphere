@@ -15,11 +15,11 @@ function scene:create( event )
 	local background
 	local fish
 	local fish2
-	local can = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local can2 = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local can3 = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local bottle = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local bottle2 = display.newImageRect( "transpo square.jpg", 0, 0 )
+	local can = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can2 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can3 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle2 = display.newImageRect( "blue bin button.png", 0, 0 )
 
 	if points >= 20 then
 		background = display.newImageRect( "perfecteco.jpg", 415, 646 )
@@ -149,16 +149,16 @@ function scene:show( event )
 		-- Called when the scene is now on screen
 		--
 
-		
+
 	local sceneGroup = self.view
 	local background
 	local fish
 	local fish2
-	local can = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local can2 = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local can3 = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local bottle = display.newImageRect( "transpo square.jpg", 0, 0 )
-	local bottle2 = display.newImageRect( "transpo square.jpg", 0, 0 )
+	local can = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can2 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can3 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle2 = display.newImageRect( "blue bin button.png", 0, 0 )
 
 	if points >= 20 then
 		background = display.newImageRect( "perfecteco.jpg", 415, 646 )
