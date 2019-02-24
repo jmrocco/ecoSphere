@@ -13,9 +13,21 @@ function scene:create( event )
 	content()
 end
 
+<<<<<<< HEAD
 function scene:show( event )
 	content()
 end
+=======
+	local sceneGroup = self.view
+	local background
+	local fish
+	local fish2
+	local can = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can2 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can3 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle2 = display.newImageRect( "blue bin button.png", 0, 0 )
+>>>>>>> master
 
 ---------------------------------------------------------------------------------
 
@@ -34,6 +46,7 @@ function content()
  	local count = 99999999999999999999999999999999
  	local back = false
  	local back2 = false
+<<<<<<< HEAD
 	local background
 	local fish, fish2
 	local can = display.newImageRect( "transpo square.jpg", 0, 0 )
@@ -41,6 +54,90 @@ function content()
 	local can3 = display.newImageRect( "transpo square.jpg", 0, 0 )
 	local bottle = display.newImageRect( "transpo square.jpg", 0, 0 )
 	local bottle2 = display.newImageRect( "transpo square.jpg", 0, 0 )
+=======
+
+	local function swim()
+		if fish.x < 0 then
+	    	back = false
+		end
+		if fish.x > display.actualContentWidth then
+	    	back = true
+	    	fish.xScale = -1
+		end
+		if back == false then
+	    	fish.x = fish.x + 1
+	    	fish.xScale = 1
+		end
+		if back == true then
+	    	fish.x = fish.x - 1
+		end
+		fish.y = (math.sin(fish.x/30) * 20) + 180
+		if points < 30 then
+			fish.y = fish.y + (points * 10)
+		else
+			fish.y = fish.y + 300
+		end
+
+		if fish2.x < 0 then
+	    	back2 = false
+		end
+		if fish2.x > display.actualContentWidth then
+	    	back2 = true
+	    	fish2.xScale = -1
+		end
+		if back2 == false then
+	    	fish2.x = fish2.x + 1
+	    	fish2.xScale = 1
+		end
+		if back2 == true then
+	    	fish2.x = fish2.x - 1
+		end
+		fish2.y = (math.sin(fish2.x/30) * 20) + 180
+		if points < 30 then
+			fish2.y = fish2.y + (points * 5)
+		else
+			fish2.y = fish2.y + 300
+		end
+	end
+
+	timer.performWithDelay(10, swim, count)
+	local scoreText = display.newText(points, display.contentCenterX, 20, native.systemFont, 60 )
+	scoreText:setFillColor( 0, 0, 0 )
+
+	sceneGroup:insert( background )
+	sceneGroup:insert( fish )
+	sceneGroup:insert( fish2 )
+	sceneGroup:insert( can )
+	sceneGroup:insert( can2 )
+	sceneGroup:insert( can3 )
+	sceneGroup:insert( bottle )
+	sceneGroup:insert( bottle2 )
+	sceneGroup:insert( scoreText )
+
+
+end
+
+function scene:show( event )
+	local sceneGroup = self.view
+	local phase = event.phase
+
+	if phase == "will" then
+		-- Called when the scene is still off screen and is about to move on screen
+	elseif phase == "did" then
+		-- Called when the scene is now on screen
+		--
+
+
+	local sceneGroup = self.view
+	local background
+	local fish
+	local fish2
+	local can = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can2 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local can3 = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle = display.newImageRect( "blue bin button.png", 0, 0 )
+	local bottle2 = display.newImageRect( "blue bin button.png", 0, 0 )
+>>>>>>> master
 
 	if points >= 20 then
 		background = display.newImageRect( "perfecteco.jpg", 415, 646 )
