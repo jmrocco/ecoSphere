@@ -12,8 +12,6 @@ Users are able to see the impact they have on the environment through their digi
 
 This application was written and tested in [Corona SDK](https://coronalabs.com/) using Lua. 
 
-Andriod users have the ability to download this app onto their photo for testing.
-
 NOTE: Please make sure to change the view to IPhoneX, resolution is based on that format.
 
 ## Information
