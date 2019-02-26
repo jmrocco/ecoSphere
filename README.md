@@ -1,5 +1,8 @@
 # ecoSphere
 
+**Created by: James Bates, Caleb Brett and Juliette Rocco for Ecoding Hacks 2019.**
+
+
 EcoSphere encourages people to recycle through fun, creative animations and data collecting techniques. 
 
 Essentially, users are thrown into a virtual environment that is polluted, and as the user tracks their recycling progress, their virtual environment brightens. 
