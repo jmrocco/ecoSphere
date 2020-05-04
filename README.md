@@ -19,5 +19,5 @@ NOTE: Please make sure to change the view to IPhoneX, resolution is based on tha
 
 ## Information
 
-For my information please visit our [Devpost.](https://devpost.com/software/ecosphere)
+For more information please visit our [Devpost.](https://devpost.com/software/ecosphere)
 
